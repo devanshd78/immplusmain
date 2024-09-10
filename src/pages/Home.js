@@ -56,6 +56,11 @@ function Home() {
 
   return (
     <Container fluid>
+      <header>
+        <meta name="description" content="Immplus Pvt. Ltd. offers fast and reliable medicine delivery, doctor appointment booking, and accurate lab tests. Experience top-notch healthcare services right at your doorstep." />
+        <meta name="keywords" content="medicine delivery, doctor appointments, lab tests, healthcare, teleconsultation, medical services, immplus, Immplus" />
+        <title>Immplus Pvt. Ltd. - Fast Medicine Delivery, Doctor Appointments, and Lab Tests</title>
+      </header>
       <Row className="align-items-center">
         <Col md={6} className="text-center text-md-start">
           <Carousel activeIndex={activeIndex} onSelect={handleSelect} controls={false} indicators={false}>
@@ -88,21 +93,21 @@ function Home() {
               <img
                 className="d-block w-100"
                 src={Delivery}
-                alt="Quick Medicine Delivery"
+                alt="Image of quick medicine delivery"
               />
             </Carousel.Item>
             <Carousel.Item>
               <img
                 className="d-block w-100"
                 src={DoctorCarousel}
-                alt="Convenient Doctor Booking"
+                alt="Image of doctor booking services"
               />
             </Carousel.Item>
             <Carousel.Item>
               <img
                 className="d-block w-100"
                 src={LabTest}
-                alt="Comprehensive Lab Tests"
+                alt="Image of lab test services"
               />
             </Carousel.Item>
           </Carousel>
@@ -123,7 +128,7 @@ function Home() {
           <Row className="my-4">
             <Col sm={6} className="d-flex justify-content-center justify-content-sm-start mb-3 mb-sm-0">
               <Card className="app-card">
-                <Card.Img variant="top" src={PlayStore} />
+                <Card.Img variant="top" src={PlayStore} alt="Google Play Store logo"/>
                 <Card.Body>
                   <Card.Title>Google Play</Card.Title>
                   <Card.Text>
@@ -134,7 +139,7 @@ function Home() {
             </Col>
             <Col sm={6} className="d-flex justify-content-center justify-content-sm-start">
               <Card className="app-card">
-                <Card.Img variant="top" src={AppStore} />
+                <Card.Img variant="top" src={AppStore} alt="Apple App Store logo"/>
                 <Card.Body>
                   <Card.Title>App Store</Card.Title>
                   <Card.Text>
@@ -146,7 +151,7 @@ function Home() {
           </Row>
         </Col>
         <Col md={6} className="text-center">
-          <img src={HomeImage} alt="Immplus App" className="img-fluid" />
+          <img src={HomeImage} alt="Immplus App on Smartphone" className="img-fluid" />
         </Col>
       </Row>
       <Row className="justify-content-center">
