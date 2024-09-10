@@ -11,6 +11,8 @@ import LabTests from './pages/LabTest';
 import PrivacyPolicy from './PrivacyPolicy';
 import TermsAndConditions from './Terms&Condition';
 
+import { Helmet } from 'react-helmet';
+
 function App() {
   return (
     <Router>
