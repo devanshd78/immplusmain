@@ -8,11 +8,17 @@ import '../Style.css';
 import DoctorCarousel from '../Assets/Images/DoctorMac.png'
 import Delivery from '../Assets/Images/DeliveryMac.png'
 import LabTest from '../Assets/Images/LabTestMac.png'
+import EmergencyMedical from '../Assets/Images/EmergencyHealthcare.jpg'
+import HealthSupplement from '../Assets/Images/HealthSupplement.png'
+import Prescription from '../Assets/Images/Prescription.png'
+import LabTest1 from '../Assets/Images/LabTest.jpg'
 import HomeImage from '../Assets/Images/HomeIphone.png'
 import AppStore from '../Assets/Images/AppStore.png'
 import PlayStore from '../Assets/Images/Playstore.png'
 import Medicinedelivery from '../Assets/Images/Medicine Delivery.png';
 import LabTestService from '../Assets/Images/LabTestService.png'
+import DoctorAppointment from '../Assets/Images/DoctorAppointment.jpg'
+
 import { useNavigate } from 'react-router-dom';
 function Home() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -128,7 +134,7 @@ function Home() {
           <Row className="my-4">
             <Col sm={6} className="d-flex justify-content-center justify-content-sm-start mb-3 mb-sm-0">
               <Card className="app-card">
-                <Card.Img variant="top" src={PlayStore} alt="Google Play Store logo"/>
+                <Card.Img variant="top" src={PlayStore} alt="Google Play Store logo" />
                 <Card.Body>
                   <Card.Title>Google Play</Card.Title>
                   <Card.Text>
@@ -139,7 +145,7 @@ function Home() {
             </Col>
             <Col sm={6} className="d-flex justify-content-center justify-content-sm-start">
               <Card className="app-card">
-                <Card.Img variant="top" src={AppStore} alt="Apple App Store logo"/>
+                <Card.Img variant="top" src={AppStore} alt="Apple App Store logo" />
                 <Card.Body>
                   <Card.Title>App Store</Card.Title>
                   <Card.Text>
@@ -175,7 +181,7 @@ function Home() {
           </div>
           <div className="card-wrapper">
             <Card className="service-card">
-              <Card.Img variant="top" src={DoctorCarousel} alt="Doctor Appointments" className="service-image" />
+              <Card.Img variant="top" src={DoctorAppointment} alt="Doctor Appointments" className="service-image" />
               <Card.Body>
                 <Card.Title>Doctor Appointments</Card.Title>
                 <Card.Text>
@@ -186,7 +192,7 @@ function Home() {
           </div>
           <div className="card-wrapper">
             <Card className="service-card">
-              <Card.Img variant="top" src={LabTestService} alt="Lab Tests" className="service-image" />
+              <Card.Img variant="top" src={LabTest1} alt="Lab Tests" className="service-image" />
               <Card.Body>
                 <Card.Title>Lab Tests</Card.Title>
                 <Card.Text>
@@ -198,33 +204,33 @@ function Home() {
           {/* Add more cards for additional services */}
           <div className="card-wrapper">
             <Card className="service-card">
-              <Card.Img variant="top" src={LabTest} alt="Healthcare Support" className="service-image" />
+              <Card.Img variant="top" src={EmergencyMedical} alt="Healthcare Support" className="service-image" />
               <Card.Body>
-                <Card.Title>Healthcare Support</Card.Title>
+                <Card.Title>Emergency Medical Assistance</Card.Title>
                 <Card.Text>
-                  24/7 healthcare support via chat or call to guide you on health concerns and medicine use.
+                  24/7 Immediate support for emergencies, with on-call doctors and ambulances.
                 </Card.Text>
               </Card.Body>
             </Card>
           </div>
           <div className="card-wrapper">
             <Card className="service-card">
-              <Card.Img variant="top" src={LabTest} alt="Pharmacy Locator" className="service-image" />
+              <Card.Img variant="top" src={HealthSupplement} alt="Pharmacy Locator" className="service-image" />
               <Card.Body>
-                <Card.Title>Pharmacy Locator</Card.Title>
+                <Card.Title>Health Supplements</Card.Title>
                 <Card.Text>
-                  Use our app to locate nearby pharmacies for your urgent needs. Convenient and efficient.
+                  Order a wide range of health supplements at competitive prices.
                 </Card.Text>
               </Card.Body>
             </Card>
           </div>
           <div className="card-wrapper">
             <Card className="service-card">
-              <Card.Img variant="top" src={LabTest} alt="Health Reminders" className="service-image" />
+              <Card.Img variant="top" src={Prescription} alt="Health Reminders" className="service-image" />
               <Card.Body>
-                <Card.Title>Health Reminders</Card.Title>
+                <Card.Title>Prescription Upload</Card.Title>
                 <Card.Text>
-                  Set personalized reminders for your medicines, doctor appointments, and tests.
+                  Easily upload your prescriptions and let us take care of the rest.
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -295,3 +301,4 @@ function Home() {
 }
 
 export default Home;
+

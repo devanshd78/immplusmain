@@ -512,7 +512,7 @@ a:hover {
     font-weight: 600;
     transition: background-color 0.3s ease, border-color 0.3s ease;
     display: block;
-    width: 10%;
+    width: 100%; /* Full width on mobile */
     text-align: center;
     margin-top: 10px;
   }
@@ -570,5 +570,225 @@ a:hover {
     .contact-card {
       margin-bottom: 15px;
     }
+  }
+  .services-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 2rem;
+  }
+  
+  .service-card {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .learn-more-btn {
+    background-color: #5c9a41;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+
+  .about-container {
+    padding: 2rem;
+    line-height: 1.6;
+  }
+  
+  .company-overview {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .company-overview h1 {
+    font-size: 2.5rem;
+    color: #5c9a41;
+  }
+  
+  .mission-vision h2 {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+  }
+  
+  .mission-vision p {
+    margin-bottom: 1rem;
+  }
+  
+  .our-story h2 {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+  }
+  
+  .our-story p {
+    margin-bottom: 2rem;
+  }
+  
+  .team-section {
+    margin-top: 2rem;
+  }
+  
+  .team-section h2 {
+    font-size: 2rem;
+  }
+  
+  .team-members {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+  }
+  
+  .team-member {
+    text-align: center;
+  }
+  
+  .team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+  
+  .team-member h3 {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .core-values {
+    margin-top: 2rem;
+  }
+  
+  .core-values h2 {
+    font-size: 2rem;
+  }
+  
+  .core-values ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .core-values li {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+  }
+  
+  .core-values strong {
+    color: #5c9a41;
+  }
+  
+  .milestones {
+    margin-top: 3rem;
+  }
+  
+  .milestones h2 {
+    font-size: 2rem;
+  }
+  
+  .milestone-timeline {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .milestone {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    width: 30%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .milestone h3 {
+    color: #5c9a41;
+    font-size: 1.5rem;
+  }
+  
+  .service-detail-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-detail-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .service-detail-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .service-detail-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .service-detail-content p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  .service-features {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  .service-features h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .service-features ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .service-features li {
+    margin-bottom: 5px;
+    font-size: 1rem;
+    color: #444;
+  }
+  
+  .service-contact {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 20px;
+  }
+  
+  .back-button {
+    background-color: #5c9a41;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .back-button:hover {
+    background-color: #4a7a2c;
   }
   

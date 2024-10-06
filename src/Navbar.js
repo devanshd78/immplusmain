@@ -2,7 +2,7 @@ import React from 'react';
 import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Style.css';
-import logo from './Assets/Images/logo.png'; 
+import logo from './Assets/Images/logo.png';
 
 function AppNavbar() {
   return (
@@ -20,12 +20,16 @@ function AppNavbar() {
           <Nav className="ms-auto">
             <Nav.Link as={Link} to="/" className="nav-link-text">Home</Nav.Link>
             <Nav.Link as={Link} to="/services" className="nav-link-text">Services</Nav.Link>
-            <Nav.Link as={Link} to="/about" className="nav-link-text">About</Nav.Link>
-            <Nav.Link as={Link} to="/contact" className="nav-link-text">Contact</Nav.Link>
+            {/* <Nav.Link as={Link} to="/about" className="nav-link-text">About</Nav.Link> */}
+            <Nav.Link as={Link} to="/contact" className="nav-link-text">Contact Us</Nav.Link>
             <NavDropdown title="More" id="basic-nav-dropdown" className="nav-link-text">
-              <NavDropdown.Item as={Link} to="/medicine-delivery">Medicine Delivery</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/doctor-booking">Doctor Booking</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/lab-tests">Lab Tests</NavDropdown.Item>
+              <NavDropdown.Item href="https://www.pharma.immplus.in" target="_blank" rel="noopener noreferrer">
+                Pharmacy Login
+              </NavDropdown.Item>
+              <NavDropdown.Item href="https://www.doctor.immplus.in" target="_blank" rel="noopener noreferrer">
+                Doctor Login
+              </NavDropdown.Item>
+              {/* <NavDropdown.Item as={Link} to="/lab-tests">Lab Tests</NavDropdown.Item> */}
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
